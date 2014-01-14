@@ -57,6 +57,11 @@ namespace RiskCalculatorUI
             this.Hide();
         }
 
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
        
     }
 }
