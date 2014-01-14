@@ -21,10 +21,10 @@ namespace RiskCalculatorUI
 
         private void results_Load(object sender, EventArgs e)
         {
-            label1.Text = first_window.prediction.ToString() + " years risk for this woman: " + first_window.predictionResult.ToString();
-            label3.Text = "Lifetime risk for this woman: " + first_window.absRiskPctg.ToString();
-            label2.Text = first_window.prediction.ToString() + " years risk for average woman: " + first_window.averageRisk.ToString();
-            label4.Text = "Lifetime risk for average: " + first_window.avgRiskPctg.ToString();
+            label1.Text = first_window.prediction.ToString() + " years risk for this woman: " + first_window.predictionResult.ToString() + "%";
+            label3.Text = "Lifetime risk for this woman: " + first_window.absRiskPctg.ToString() + "%";
+            label2.Text = first_window.prediction.ToString() + " years risk for average woman: " + first_window.averageRisk.ToString() + "%";
+            label4.Text = "Lifetime risk for average: " + first_window.avgRiskPctg.ToString() + "%";
             this.Location = first_window.l1;
             timer1.Start();
         }

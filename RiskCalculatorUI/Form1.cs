@@ -146,7 +146,7 @@ namespace RiskCalculatorUI
 
             int race = BcptConvert.GetRace(raceInput.SelectedItem.ToString());
             // Calculate 5 year risk.
-            Helper.RiskCalc(0, currentAge, currentAge + 5, menarcheAge, firstLiveBirthAge, hadBiopsy, numBiopsy,
+            Helper.RiskCalc(0, currentAge, currentAge + Convert.ToInt32(projectionInput.Text), menarcheAge, firstLiveBirthAge, hadBiopsy, numBiopsy,
                 hyperPlasia, firstDegreeRel, race, out absRisk, out avgRisk);
             Helper.CalcPercentage(absRisk, avgRisk, out absRiskPctg, out avgRiskPctg);
 
